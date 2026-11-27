@@ -31,7 +31,11 @@
         <section class="entry"> aria-label="Journal editor">
             <input class="title" type="text" aria-label="Journal title" placeholder="Give your day a title...">
             <textarea class="writing" aria-label="Journal body" placeholder="Start Writing about your day...."></textarea>
-            <p class="status"><span class="word-count">0 words</span></span> Not saved yet</span></p>
+            <p class="status">
+                <span class="word-count">0 words</span>
+                <span class="save-status" aria-live="polite">Not saved yet </span>
+                <button class="save" type="button">SAVE</button>
+             </p>
         </section>
     </main>
     <script src="script.js"></script>
