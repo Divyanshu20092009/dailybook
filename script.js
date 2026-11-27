@@ -4,7 +4,7 @@ const dateKey = today.getFullYear() + '_' +
   String(today.getDate()).padStart(2, '0');
 
 const date = document.querySelector('.date');
-date.textContent = new Date().toLocalDataString('en-US', {
+date.textContent = today.toLocalDataString('en-US', {
     weekday: 'long',
     month: 'long',
     day: 'numeric',
@@ -57,7 +57,7 @@ function updateWordCount() {
 function saveEntry() {
   try {
     const entries = readEntries();
-    entries[dateKey] = { title: title, body: writing.value};
+    entries[dateKey] = { title: title.value, body: writing.value};
     localStorage.setItem('daybook-entries', JSON.stringify(entries));
     saveStatus.textContent = 'saved locally';
   } catch {

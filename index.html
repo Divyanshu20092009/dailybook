@@ -2,25 +2,25 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="color-scheme" content="dark"
+    <meta name="color-scheme" content="dark">
     <meta name="description" content="DAYBOOK, your personal daily journaling space.">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>DAYBOOK</title>
-    <link rel="styleshet" href="style.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <aside class="sidebar">
         <strong class="brand"><img src="assets/icons/logo.png" alt="" width="22" height="22">DAYBOOK</strong>
-        <nav>
-            <ul>
-                <li class="active" aria-current="page"><img src="assets/icons/today.png" alt="" width="20" height="20">Today</li>
-                <li class="active" aria-current="page"><img src="assets/icons/entries.png" alt="" width="20" height="20">Entries</li>
-                <li class="active" aria-current="page"><img src="assets/icons/stats.png" alt="" width="20" height="20">Stats</li>
-                <li class="active" aria-current="page"><img src="assets/icons/backups.png" alt="" width="20" height="20">Backup</li>
-                <li class="active" aria-current="page"><img src="assets/icons/calendar.png" alt="" width="20" height="20">Calendar</li>
-                <li class="active" aria-current="page"><img src="assets/icons/settings.png" alt="" width="20" height="20">Setiings</li>
-            </ul>
-        </nav>
+        <nav aria-label="Journal sections">
+    <ul>
+        <li class="active" aria-current="page"><img src="assets/icons/today.png" alt="" width="20" height="20">Today</li>
+        <li><img src="assets/icons/calendar.png" alt="" width="20" height="20">Calendar</li>
+        <li><img src="assets/icons/entries.png" alt="" width="20" height="20">Entries</li>
+        <li><img src="assets/icons/stats.png" alt="" width="20" height="20">Stats</li>
+        <li><img src="assets/icons/backups.png" alt="" width="20" height="20">Backups</li>
+        <li><img src="assets/icons/settings.png" alt="" width="20" height="20">Settings</li>
+    </ul>
+</nav>
         
     </aside>
     <main>
@@ -28,7 +28,7 @@
             <div class="date"></div>
             <h1>Today's Journal</h1>
         </header>
-        <section class="entry"> aria-label="Journal editor">
+        <section class="entry" aria-label="Journal editor">
             <input class="title" type="text" aria-label="Journal title" placeholder="Give your day a title...">
             <textarea class="writing" aria-label="Journal body" placeholder="Start Writing about your day...."></textarea>
             <p class="status">
