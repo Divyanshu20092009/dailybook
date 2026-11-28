@@ -62,9 +62,29 @@ main {
     flex-direction: column;
 }
 
+.date-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 14px;
+}
+
+
 .date {
     color: #a2aca6;
     font-size: 0.875rem;
+}
+
+.dates {
+    max-width: 100%;
+    padding: 4px 12px;
+    border: 1px solid #303734;
+    border-radius: 6px;
+    background: #1e2321;
+    color: #a2aca6;
+    font: inherit;
+    font-size: large;
 }
 
 h1 {
@@ -106,7 +126,7 @@ h1 {
     opacity: 1;
 }
 
-.title:focus, .writing:focus, .save:focus-visible {
+.title:focus, .writing:focus, .save:focus-visible, .dates:focus-visible {
     outline: 1px solid #bce0cb;
     outline-offset: 6px;
 }
